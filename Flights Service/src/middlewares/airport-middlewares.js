@@ -9,7 +9,7 @@ function validateCreateRequest(req, res, next) {
       StatusCodes.BAD_REQUEST
     );
 
-    return res.status(StatusCodes.BAD_REQUEST).json(ErrorResponse);
+     return res.status(StatusCodes.BAD_REQUEST).json(ErrorResponse);
   }
   if (!req.body.code) {
     ErrorResponse.message = "Failed to create an Airport";
